@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "watch": "parcel index.html watch ./"
+  },
   "devDependencies": {
     "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "bootstrap": "^4.5.0"
   }
 }
