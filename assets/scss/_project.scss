@@ -1,0 +1,63 @@
+.project {
+    padding-bottom: 100px;
+
+    .title {
+        font-weight: normal;
+        margin: 0 0 40px;
+    }
+
+    .owl-carousel {
+        width: 60vw;
+        position: relative;
+
+        .owl-item {
+            width: 545px !important;
+            height: auto;
+            position: relative;
+
+            .image-color {
+                position: absolute;
+                background-color: rgba($color: #5D7ADA, $alpha: 0.6);
+                width: 100%;
+                height: 545px;
+                border-radius: 50px;
+            }
+            
+            img {
+                height: 545px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+        }
+        
+        .owl-dots {
+            display: grid;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: -40px;
+
+            .owl-dot {
+                span {
+                    background-color: $white-ice;
+                }
+            }
+            
+            .active {
+                span {
+                    background-color: $blue-light;
+                }
+            }
+        }
+    }
+
+    .offers {
+        margin-top: 140px;
+    }
+
+    .more-project {
+        .offers-icon {
+            height: 70px;
+        }
+    }
+}

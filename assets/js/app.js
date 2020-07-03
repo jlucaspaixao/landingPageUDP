@@ -1,4 +1,6 @@
-import anime from '../../node_modules/animejs/lib/anime.es.js';
+import anime from 'animejs';
+import './jquery';
+import 'owl.carousel';
 
 anime({
     targets: ".cover",
@@ -49,4 +51,33 @@ anime({
     targets: ".shape-11, .shape-12",
     rotate: "1turn",
     duration: 15000
+})
+
+anime({
+    targets: ".offers",
+    translateY: -50,
+    easing: "easeInOutExpo",
+    duration: 5000
+})
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+  });
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoWidth:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 })
