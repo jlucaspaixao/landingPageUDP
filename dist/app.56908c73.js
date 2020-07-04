@@ -16462,9 +16462,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   easing: "easeInOutExpo",
   duration: 5000
 });
-$(document).ready(function () {
-  $('.owl-carousel').owlCarousel();
-});
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
@@ -16476,6 +16473,23 @@ $('.owl-carousel').owlCarousel({
     },
     600: {
       items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+});
+$('.owl-carousel2').owlCarousel({
+  rtl: true,
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
     },
     1000: {
       items: 1
@@ -16510,7 +16524,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51739" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52193" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -16687,4 +16701,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","assets/js/app.js"], null)
-//# sourceMappingURL=/app.56908c73.js.map
+//# sourceMappingURL=app.56908c73.js.map

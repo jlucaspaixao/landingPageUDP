@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "watch": "parcel index.html watch ./"
+    "watch": "parcel index.html watch ./",
+    "dev": "parcel index.html --public-url ./"
   },
+
   "devDependencies": {
     "sass": "^1.26.9"
   },
+  
   "dependencies": {
     "animejs": "^3.2.0",
     "bootstrap": "^4.5.0",

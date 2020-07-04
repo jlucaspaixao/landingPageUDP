@@ -60,10 +60,6 @@ anime({
     duration: 5000
 })
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
-  });
-
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -75,6 +71,24 @@ $('.owl-carousel').owlCarousel({
         },
         600:{
             items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+$('.owl-carousel2').owlCarousel({
+    rtl:true,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
         },
         1000:{
             items:1

@@ -1,5 +1,4 @@
 .project {
-    padding-bottom: 100px;
 
     .title {
         font-weight: normal;
@@ -41,6 +40,10 @@
                 span {
                     background-color: $white-ice;
                 }
+            }
+
+            button:focus {
+                outline: transparent;
             }
             
             .active {

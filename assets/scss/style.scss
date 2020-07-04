@@ -2,17 +2,21 @@
 @import "owl-carousel";
 @import "buttons";
 @import "variables";
+@import "cards";
 
 // Sections
 @import "top-banner";
 @import "we-offer";
 @import "project";
+@import "about";
+@import "contact";
 
 
 body {
     overflow-x: hidden;
     background-color: $background-color;
     font-family: 'Rubik', sans-serif;
+    width: 100%;
 }
 
 .title {
