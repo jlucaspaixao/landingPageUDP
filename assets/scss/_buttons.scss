@@ -13,3 +13,18 @@
         border-color: #670468;
     }
 }
+
+.btn-secondary {
+    background-color: $blue-dark;
+    border: 1px solid $blue-dark;
+    color: #92ABFD;
+    font-size: 16px;
+    font-weight: bold;
+    height: 62px !important;
+
+    &:hover {
+        background-color: #061363;
+        border: 1px solid #061363;
+        color: #92ABFD;
+    }
+}

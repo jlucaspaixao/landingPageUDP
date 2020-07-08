@@ -1,5 +1,19 @@
 .contact {
-    width: 100%;
-    height: 200px;
     background-color: #fff;
+    padding: 190px 0 155px;
+    text-align: center;
+
+    .title {
+        margin-bottom: 35px;
+    }
+
+    &-email, &-phone {
+        font-size: 25px;
+        font-weight: bold;
+        color: $blue-gray;
+    }
+
+    &-phone {
+        margin-bottom: 85px;
+    }
 }
