@@ -16462,6 +16462,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   easing: "easeInOutExpo",
   duration: 5000
 });
+(0, _animejs.default)({
+  targets: ".shape-offer-1, .shape-offer-2, .shape-offer-5, .shape-offer-7, .shape-project-4, .shape-project-7, .shape-project-8",
+  translateY: 100,
+  duration: 12000
+});
+(0, _animejs.default)({
+  targets: ".shape-offer-3, .shape-offer-6, .shape-project-6",
+  translateY: -100,
+  duration: 12000
+});
+(0, _animejs.default)({
+  targets: ".shape-offer-4, .shape-project-5",
+  rotate: "1turn",
+  duration: 15000
+});
+(0, _animejs.default)({
+  targets: ".shape-offer-8",
+  translateX: 100,
+  translateY: 100,
+  duration: 15000
+});
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
@@ -16524,7 +16545,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53501" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

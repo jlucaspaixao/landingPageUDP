@@ -60,6 +60,31 @@ anime({
     duration: 5000
 })
 
+anime({
+    targets: ".shape-offer-1, .shape-offer-2, .shape-offer-5, .shape-offer-7, .shape-project-4, .shape-project-7, .shape-project-8",
+    translateY: 100,
+    duration: 12000
+})
+
+anime({
+    targets: ".shape-offer-3, .shape-offer-6, .shape-project-6",
+    translateY: -100,
+    duration: 12000
+})
+
+anime({
+    targets: ".shape-offer-4, .shape-project-5",
+    rotate: "1turn",
+    duration: 15000
+})
+
+anime({
+    targets: ".shape-offer-8",
+    translateX: 100,
+    translateY: 100,
+    duration: 15000
+})
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,

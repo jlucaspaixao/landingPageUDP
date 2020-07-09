@@ -13,12 +13,15 @@
 @import "contact";
 @import "footer";
 
-
 body {
     overflow-x: hidden;
     background-color: $background-color;
     font-family: 'Rubik', sans-serif;
-    width: 100%;
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
 }
 
 .title {

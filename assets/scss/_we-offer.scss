@@ -1,5 +1,6 @@
 .we-offer, .more-project {
     text-align: center;
+    position: relative;
 
     .offers {
         &-icon {
@@ -12,6 +13,56 @@
             font-size: 16px;
             color: $blue-gray;
             margin-bottom: 80px;
+        }
+    }
+
+    &_shape {
+        .shape-offer-1 {
+            position: absolute;
+            top: 7%;
+            right: 5%;
+        }
+
+        .shape-offer-2 {
+            position: absolute;
+            top: 13%;
+            right: -19%;
+        }
+
+        .shape-offer-3 {
+            position: absolute;
+            top: 37%;
+            right: -22%;
+        }
+
+        .shape-offer-4 {
+            position: absolute;
+            bottom: 5%;
+            right: 13%;
+        }
+
+        .shape-offer-5 {
+            position: absolute;
+            top: 25%;
+            left: 7%;
+        }
+
+        .shape-offer-6 {
+            position: absolute;
+            bottom: -5%;
+            left: -5%;
+        }
+
+        .shape-offer-7 {
+            position: absolute;
+            bottom: 18%;
+            left: -12%;
+        }
+
+        .shape-offer-8 {
+            position: absolute;
+            bottom: 13%;
+            left: 0;
         }
     }
 }
