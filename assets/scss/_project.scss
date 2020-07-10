@@ -66,9 +66,7 @@
     }
 
     .more-project {
-        @include media-breakpoint-only(md) {
-            width: 100%;
-        }
+        width: 100%;
 
         .offers-icon {
             height: 70px;
