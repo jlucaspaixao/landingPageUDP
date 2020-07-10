@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "watch": "parcel index.html watch ./",
+    "dev": "parcel index.html --public-url ./",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "bootstrap": "^4.5.0",
+    "owl.carousel": "^2.3.4",
+    "webpack": "^4.43.0"
+  }
+}

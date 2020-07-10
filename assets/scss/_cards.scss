@@ -1,0 +1,84 @@
+.card {
+    background-color: $background-color;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-radius: 80px;
+    height: 900px;
+
+    &-title {
+        margin: 40px 0 70px;
+        font-size: 35px;
+        font-weight: bold;
+        color: $blue-light;
+    }
+
+    &-img {
+        width: 255px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        font-size: 16px;
+        text-align: left;
+        color: $blue-gray;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .owl-carousel {
+        position: absolute;
+        width: 60%;
+        right: 50%;
+        left: -15%;
+        bottom: -5%;
+
+        .owl-item {
+            .item {
+                transform: translateX(260px);
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50px;
+                    object-fit: cover;
+                }
+
+                .image-color {
+                    border-radius: 50px;
+                }
+            }
+        }
+        
+        .owl-dots {
+            display: grid;
+            position: absolute;
+            top: 40%;
+            bottom: 60%;
+            right: -30px;
+
+            .owl-dot {
+                span {
+                    background-color: $white-ice;
+                }
+            }
+
+            button:focus {
+                outline: transparent;
+            }
+            
+            .active {
+                span {
+                    background-color: $blue-light;
+                }
+            }
+        }
+
+        .image-color {
+            background-color: rgba($color: $blue-light, $alpha: 0.6);
+        }
+    }
+}

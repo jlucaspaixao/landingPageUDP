@@ -1,0 +1,190 @@
+.project {
+    position: relative;
+    overflow: hidden;
+
+    .title {
+        font-weight: normal;
+        margin: 0 0 40px;
+    }
+
+    .owl-carousel {
+        width: 60vw;
+        position: relative;
+
+        .owl-item {
+            width: 545px !important;
+            height: auto;
+            position: relative;
+
+            &.firstActiveItem .image-color {
+                opacity: 0;
+            }
+
+            .image-color {
+                position: absolute;
+                background-color: rgba($color: #5D7ADA, $alpha: 0.6);
+                width: 100%;
+                height: 545px;
+                border-radius: 50px;
+                transition: opacity 1000ms ease;
+            }
+            
+            img {
+                height: 545px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+        }
+        
+        .owl-dots {
+            display: grid;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: -40px;
+
+            .owl-dot {
+                span {
+                    background-color: $white-ice;
+                }
+            }
+
+            button:focus {
+                outline: transparent;
+            }
+            
+            .active {
+                span {
+                    background-color: $blue-light;
+                }
+            }
+        }
+    }
+
+    .offers {
+        margin-top: 140px;
+    }
+
+    .more-project {
+        width: 100%;
+
+        .offers-icon {
+            height: 70px;
+        }
+    }
+
+    &_shape {
+        @include media-breakpoint-only(md) {
+            .shape-project-4 {
+                position: absolute;
+                top: 22%;
+                left: 10%;
+            }
+            
+            .shape-project-5 {
+                position: absolute;
+                top: 0;
+                left: 10%;
+                width: 23px;
+                height: auto;
+            }
+            
+            .shape-project-6 {
+                position: absolute;
+                bottom: -6%;
+                left: -28%;
+                width: 661px;
+                height: auto;
+            }
+            
+            .shape-project-7 {
+                position: absolute;
+                bottom: 45%;
+                left: 27%;
+                width: 39px;
+                height: auto;
+            }
+            
+            .shape-project-8 {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            .shape-project-4 {
+                position: absolute;
+                top: 8%;
+                left: 0;
+            }
+            
+            .shape-project-5 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 23px;
+                height: auto;
+            }
+            
+            .shape-project-6 {
+                position: absolute;
+                bottom: -5%;
+                left: -26%;
+                width: 661px;
+                height: auto;
+            }
+            
+            .shape-project-7 {
+                position: absolute;
+                bottom: 46%;
+                left: 30%;
+                width: 39px;
+                height: auto;
+            }
+            
+            .shape-project-8 {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-only(xl) {
+            .shape-project-4 {
+                position: absolute;
+                top: 5%;
+                left: 0;
+            }
+            
+            .shape-project-5 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 23px;
+                height: auto;
+            }
+            
+            .shape-project-6 {
+                position: absolute;
+                bottom: -8%;
+                left: -13%;
+                width: 661px;
+                height: auto;
+            }
+            
+            .shape-project-7 {
+                position: absolute;
+                bottom: 44%;
+                left: 34%;
+                width: 39px;
+                height: auto;
+            }
+            
+            .shape-project-8 {
+                position: absolute;
+                bottom: -3%;
+                left: -8%;
+                z-index: 1;
+                width: 177px;
+                height: auto;
+            }
+        }
+    }
+}
