@@ -2,6 +2,11 @@
     background-color: #fff;
     padding: 190px 0 155px;
     text-align: center;
+    position: relative;
+    top: -132px;
+    z-index: -1;
+    margin-bottom: -132px;
+    overflow: hidden;
 
     .title {
         margin-bottom: 35px;
@@ -15,5 +20,80 @@
 
     &-phone {
         margin-bottom: 85px;
+    }
+
+    &-shape {
+        @include media-breakpoint-only(md) {
+            .shape-contact-1 {
+                bottom: 9%;
+                left: -18%;
+                width: 291px;
+                height: auto;
+            }
+            
+            .shape-contact-2 {
+                bottom: 20%;
+                left: 2%;
+                width: 234px;
+                height: auto;
+            }
+            
+            .shape-contact-3 {
+                bottom: 49%;
+                left: 5%;
+                width: 26px;
+                height: auto;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            .shape-contact-1 {
+                bottom: 9%;
+                left: -22%;
+                width: 291px;
+                height: auto;
+            }
+            
+            .shape-contact-2 {
+                bottom: 20%;
+                left: -3%;
+                width: 234px;
+                height: auto;
+            }
+            
+            .shape-contact-3 {
+                bottom: 49%;
+                left: -1%;
+                width: 26px;
+                height: auto;
+            }
+        }
+
+        @include media-breakpoint-only(xl) {
+            .shape-contact-1 {
+                bottom: 9%;
+                left: -15%;
+                width: 291px;
+                height: auto;
+            }
+            
+            .shape-contact-2 {
+                bottom: 20%;
+                left: 1%;
+                width: 234px;
+                height: auto;
+            }
+            
+            .shape-contact-3 {
+                bottom: 49%;
+                left: 2%;
+                width: 26px;
+                height: auto;
+            }
+        }
+
+        .shape-contact-1, .shape-contact-2, .shape-contact-3 {
+            position: absolute;
+        }
     }
 }

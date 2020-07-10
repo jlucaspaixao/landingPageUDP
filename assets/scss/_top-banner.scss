@@ -1,9 +1,102 @@
 .top-banner {
     position: relative;
-    width: 100vw;
-    height: auto;
     overflow: hidden;
-    padding: 100px 0 50px;
+    width: 100vw;
+
+    @include media-breakpoint-only(md) {
+        padding: 60px 0 45px;
+
+        &_content {
+            &--logo {
+                width: 250px;
+    
+                .texto-logo {
+                    padding-top: 22px;
+                }
+            }
+
+            p {
+                padding-left: 22px;
+            }
+        }
+    
+        .btn-primary {
+            margin-left: 8px;
+            margin-top: 20px;
+        }
+    }
+
+    @include media-breakpoint-only(lg) {
+        padding: 60px 0 45px;
+
+        &_content {
+            &--logo {
+                width: 250px;
+    
+                .texto-logo {
+                    padding-top: 22px;
+                }
+            }
+
+            p {
+                padding-left: 4px;
+            }
+        }
+    
+        .btn-primary {
+            margin-left: -11px;
+            margin-top: 20px;
+        }
+    }
+
+    @include media-breakpoint-only(xl) {
+        padding: 60px 0 45px;
+
+        &_content {
+            &--logo {
+                width: 300px;
+    
+                .texto-logo {
+                    padding-top: 30px;
+                }
+            }
+
+            p {
+                padding-left: 8px;
+            }
+        }
+    
+        .btn-primary {
+            margin-left: -4px;
+            margin-top: 20px;
+        }
+    }
+    
+    &_content {
+        z-index: 1;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        
+        &--logo {
+            height: auto;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #DADFFB;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
 
     .cover {
         position: absolute;
@@ -15,139 +108,236 @@
     }
 
     &_shape {
-        .shape-1 {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            right: 37%;
-            top: -10%;
-        }
-
-        .shape-2 {
-            position: absolute;
-            width: 100px;
-            height: auto;
-            left: -5%;
-            bottom: 25%;
-        }
-
-        .shape-3 {
-            position: absolute;
-            width: 130px;
-            height: auto;
-            right: 35%;
-            top: -20%;
-            mix-blend-mode: soft-light;
-        }
-
-        .shape-4 {
-            position: absolute;
-            width: 100px;
-            height: auto;
-            left: 4%;
-            bottom: 42%;
-            mix-blend-mode: soft-light;
-        }
-
-        .shape-5 {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            right: 8%;
-            bottom: 5%;
-        }
-
-        .shape-6 {
-            position: absolute;
-            width: 400px;
-            height: auto;
-            right: 2%;
-            bottom: 0;
-            mix-blend-mode: soft-light;
-        }
-
-        .shape-7 {
-            position: absolute;
-            width: 450px;
-            height: auto;
-            right: 13%;
-            top: -30%;
-            mix-blend-mode: soft-light;
-        }
-
-        .shape-8 {
-            position: absolute;
-            width: 100px;
-            height: auto;
-            left: 13%;
-            bottom: 20%;
-        }
-
-        .shape-9 {
-            position: absolute;
-            width: 15px;
-            height: auto;
-            left: 13%;
-            bottom: 40%;
-        }
-
-        .shape-10 {
-            position: absolute;
-            width: 15px;
-            height: auto;
-            left: 39%;
-            bottom: 18%;
-        }
-
-        .shape-11 {
-            position: absolute;
-            width: 15px;
-            height: auto;
-            left: 10%;
-            top: 35%;
-        }
-
-        .shape-12 {
-            position: absolute;
-            width: 15px;
-            height: auto;
-            right: 55%;
-            top: 23%;
-        }
-    }
-
-    &_content {
-        z-index: 1;
-        position: relative;
-        width: 100%;
-        height: auto;
-
-        &--logo {
-            width: 300px;
-            height: auto;
-
-            img {
-                width: 100%;
-                height: auto;
+        @include media-breakpoint-only(md) {
+            .shape-1 {
+                width: 200px;
+                right: 36%;
+                top: -23%;
             }
-
-            .texto-logo {
-                padding-top: 30px;
+    
+            .shape-2 {
+                width: 100px;
+                left: -9%;
+                bottom: 35%;
+            }
+    
+            .shape-3 {
+                width: 130px;
+                right: 35%;
+                top: -29%;
+            }
+    
+            .shape-4 {
+                width: 100px;
+                left: 4%;
+                bottom: 54%;
+            }
+    
+            .shape-5 {
+                width: 150px;
+                right: 7%;
+                bottom: 14%;
+            }
+    
+            .shape-6 {
+                width: 400px;
+                right: -8%;
+                bottom: -2%;
+            }
+    
+            .shape-7 {
+                width: 450px;
+                right: 3%;
+                top: -45%;
+            }
+    
+            .shape-8 {
+                width: 100px;
+                left: 11%;
+                bottom: 10%;
+            }
+    
+            .shape-9 {
+                width: 15px;
+                left: 13%;
+                bottom: 52%;
+            }
+    
+            .shape-10 {
+                width: 15px;
+                left: 35%;
+                bottom: 17%;
+            }
+    
+            .shape-11 {
+                width: 15px;
+                left: 8%;
+                top: 25%;
+            }
+    
+            .shape-12 {
+                width: 15px;
+                right: 53%;
+                top: 17%;
             }
         }
 
-        p {
-            padding-left: 5px;
-            font-size: 20px;
-            color: #DADFFB;
-
-            span {
-                font-weight: bold;
+        @include media-breakpoint-only(lg) {
+            .shape-1 {
+                width: 200px;
+                right: 36%;
+                top: -23%;
+            }
+    
+            .shape-2 {
+                width: 100px;
+                left: -9%;
+                bottom: 30%;
+            }
+    
+            .shape-3 {
+                width: 130px;
+                right: 35%;
+                top: -29%;
+            }
+    
+            .shape-4 {
+                width: 100px;
+                left: 4%;
+                bottom: 50%;
+            }
+    
+            .shape-5 {
+                width: 150px;
+                right: 7%;
+                bottom: 14%;
+            }
+    
+            .shape-6 {
+                width: 400px;
+                right: -8%;
+                bottom: -2%;
+            }
+    
+            .shape-7 {
+                width: 450px;
+                right: 3%;
+                top: -45%;
+            }
+    
+            .shape-8 {
+                width: 100px;
+                left: 11%;
+                bottom: 10%;
+            }
+    
+            .shape-9 {
+                width: 15px;
+                left: 13%;
+                bottom: 52%;
+            }
+    
+            .shape-10 {
+                width: 15px;
+                left: 36%;
+                bottom: 17%;
+            }
+    
+            .shape-11 {
+                width: 15px;
+                left: 8%;
+                top: 25%;
+            }
+    
+            .shape-12 {
+                width: 15px;
+                right: 53%;
+                top: 17%;
             }
         }
-    }
 
-    .btn-primary {
-        margin-left: -10px;
+        @include media-breakpoint-only(xl) {
+            .shape-1 {
+                width: 200px;
+                right: 38%;
+                top: -23%;
+            }
+    
+            .shape-2 {
+                width: 100px;
+                left: -7%;
+                bottom: 30%;
+            }
+    
+            .shape-3 {
+                width: 130px;
+                right: 38%;
+                top: -29%;
+            }
+    
+            .shape-4 {
+                width: 100px;
+                left: 3%;
+                bottom: 50%;
+            }
+    
+            .shape-5 {
+                width: 150px;
+                right: 10%;
+                bottom: 14%;
+            }
+    
+            .shape-6 {
+                width: 400px;
+                right: -2%;
+                bottom: -2%;
+            }
+    
+            .shape-7 {
+                width: 450px;
+                right: 11%;
+                top: -45%;
+            }
+    
+            .shape-8 {
+                width: 100px;
+                left: 11%;
+                bottom: 10%;
+            }
+    
+            .shape-9 {
+                width: 25px;
+                left: 13%;
+                bottom: 40%;
+            }
+    
+            .shape-10 {
+                width: 25px;
+                left: 38%;
+                bottom: 16%;
+            }
+    
+            .shape-11 {
+                width: 25px;
+                left: 8%;
+                top: 25%;
+            }
+    
+            .shape-12 {
+                width: 25px;
+                right: 53%;
+                top: 17%;
+            }
+        }
+        
+        .shape-1, .shape-2, .shape-3, .shape-4, .shape-5, .shape-6, 
+        .shape-7, .shape-8, .shape-9, .shape-10, .shape-11, .shape-12 {
+            position: absolute;
+            height: auto;
+        }
+        
+        .shape-3, .shape-4, .shape-6, .shape-7 {
+            mix-blend-mode: soft-light;
+        }
     }
 }
