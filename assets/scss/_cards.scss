@@ -38,8 +38,6 @@
 
         .owl-item {
             .item {
-                transform: translateX(260px);
-
                 img {
                     width: 400px;
                     height: 400px;
@@ -52,7 +50,7 @@
                 }
             }
         }
-        
+
         .owl-dots {
             display: grid;
             position: absolute;
@@ -69,7 +67,7 @@
             button:focus {
                 outline: transparent;
             }
-            
+
             .active {
                 span {
                     background-color: $blue-light;

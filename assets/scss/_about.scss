@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 50px;
-    
+
     .image-color {
         background-color: rgba($color: $blue-light, $alpha: 0.9);
         top: 0;
@@ -11,7 +11,7 @@
         bottom: 90px;
         position: absolute;
     }
-    
+
     &-img {
         object-fit: cover;
         position: absolute;
@@ -26,12 +26,16 @@
 
     .card {
         .owl-carousel {
-            width: 71%;
-            left: -25%;
-            right: 0;
+            width: 50vw;
+            right: 50%;
+            left: auto;
 
             .image-color {
                 height: 100%;
+            }
+
+            .active:not(.lastActiveItem) .image-color {
+                opacity: 0;
             }
         }
     }
@@ -127,11 +131,14 @@
             }
         }
 
-        .shape-about-1, .shape-about-2, .shape-about-3, .shape-about-4 {
+        .shape-about-1,
+        .shape-about-2,
+        .shape-about-3,
+        .shape-about-4 {
             position: absolute;
         }
     }
-    
+
     &-content {
         padding-top: 140px;
 
